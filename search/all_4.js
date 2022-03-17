@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['filtro_0',['filtro',['../class_can.html#a3276009b0150ecb538a9ced162760385',1,'Can']]],
-  ['filtros_1',['Filtros',['../namespace_filtros.html',1,'']]],
-  ['filtros_2ecpp_2',['Filtros.cpp',['../_filtros_8cpp.html',1,'']]],
-  ['filtros_2ehpp_3',['Filtros.hpp',['../_filtros_8hpp.html',1,'']]]
+  ['default_5ftimeout_8',['default_timeout',['../class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a',1,'SPI']]],
+  ['delay_9',['delay',['../class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569',1,'I2C']]]
 ];

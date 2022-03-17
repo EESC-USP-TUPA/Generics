@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['filtros_2ecpp_0',['Filtros.cpp',['../_filtros_8cpp.html',1,'']]],
-  ['filtros_2ehpp_1',['Filtros.hpp',['../_filtros_8hpp.html',1,'']]]
+  ['2_5fcomoadicionar_2emd_59',['2_ComoAdicionar.md',['../2___como_adicionar_8md.html',1,'']]]
 ];

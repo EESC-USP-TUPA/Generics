@@ -1,29 +1,6 @@
 var searchData=
 [
-  ['send_5fmessage_0',['send_message',['../namespacecommands_1_1general.html#a67eebf1f74b707384345d0d06fdf7d23',1,'commands::general']]],
-  ['send_5fsheet_1',['send_sheet',['../namespacecommands_1_1general.html#afbbd07c49f8eaa6a4758bd61adf77ddf',1,'commands::general']]],
-  ['setup_2',['setup',['../class_can.html#ae7e3f9ab5eb8f74c51ef8a96f4f835e0',1,'Can']]],
-  ['sheet_3',['sheet',['../classspreadsheet_1_1_spreadsheet.html#ad694394a1a8f7e31d24f280faee6e9d4',1,'spreadsheet::Spreadsheet']]],
-  ['sheet_5fauth_5ffile_4',['SHEET_AUTH_FILE',['../namespacespreadsheet.html#a08bfca78cac02dc16c92b64f84658877',1,'spreadsheet']]],
-  ['sheet_5fscope_5',['SHEET_SCOPE',['../namespacespreadsheet.html#a2647511e08f848b6d9ba8787d0726e92',1,'spreadsheet']]],
-  ['sheet_5furl_6',['SHEET_URL',['../namespacespreadsheet.html#a933f0b5e6f5ac17a11769d2520916229',1,'spreadsheet']]],
-  ['sheets_7',['sheets',['../classspreadsheet_1_1_spreadsheet.html#ada8b35764dc075f79ccd841bfd2889d9',1,'spreadsheet::Spreadsheet']]],
-  ['spi_8',['SPI',['../class_s_p_i.html#a2f285c95c63c159bbbb15020310be0d3',1,'SPI::SPI()'],['../class_s_p_i.html',1,'SPI'],['../class_s_p_i.html#a2ba081c29fbdecc704c6bf00b24d5205',1,'SPI::SPI()'],['../class_s_p_i.html#a6afba489953fbb98a52ba507641b28fe',1,'SPI::SPI(SPI_HandleTypeDef *_hspi, uint8_t tamanho_buffer, uint32_t timeout)']]],
-  ['spi_2ecpp_9',['SPI.cpp',['../_s_p_i_8cpp.html',1,'']]],
-  ['spi_2ehpp_10',['SPI.hpp',['../_s_p_i_8hpp.html',1,'']]],
-  ['spreadsheet_11',['spreadsheet',['../namespacespreadsheet.html',1,'']]],
-  ['spreadsheet_12',['Spreadsheet',['../namespacespreadsheet.html#a24427eb773138591ae7c3b7ba1dba0cd',1,'spreadsheet.Spreadsheet()'],['../classspreadsheet_1_1_spreadsheet.html',1,'spreadsheet.Spreadsheet']]],
-  ['spreadsheet_2epy_13',['spreadsheet.py',['../spreadsheet_8py.html',1,'']]],
-  ['spreadsheet_5freturn_5ftext_14',['spreadsheet_return_text',['../namespacecommands_1_1general.html#a14689474b23bca4efa95547d472ba3ca',1,'commands::general']]],
-  ['ss_15',['ss',['../classspreadsheet_1_1_spreadsheet.html#a557aefdf415d1973359cc2077ca70099',1,'spreadsheet::Spreadsheet']]],
-  ['start_5fhandler_16',['start_handler',['../namespacetask__start.html#a8788da161eda586c9aaf834cdf836531',1,'task_start']]],
-  ['start_5ftask_17',['start_task',['../classspreadsheet_1_1_electric_spreadsheet.html#ab233713e4f8af477f401586adace291d',1,'spreadsheet.ElectricSpreadsheet.start_task()'],['../classspreadsheet_1_1_system_spreadsheet.html#a0c60eb15a1ffb11082e2df70054ab616',1,'spreadsheet.SystemSpreadsheet.start_task()'],['../namespacetask__start.html#a5dba742f02810ea6693f3c379b8ec03d',1,'task_start.start_task()']]],
-  ['subsystem_18',['SUBSYSTEM',['../namespacetask__conclude.html#acfc25a5ec9b7bbb06fd842f54b8740a9',1,'task_conclude.SUBSYSTEM()'],['../namespacetask__start.html#ac8a14867dc13d095a3b3e21e07569eab',1,'task_start.SUBSYSTEM()']]],
-  ['subsystem_19',['subsystem',['../namespacetask__register.html#ad52cde08a64e1f86eef450d7f78363d4',1,'task_register']]],
-  ['subsystem_5fselector_20',['subsystem_selector',['../namespacetask__conclude.html#ae0b228599097c920e382ab662d1bc7db',1,'task_conclude.subsystem_selector()'],['../namespacetask__start.html#a8c2b18fed3f8ed52d61278a4eb3e3f60',1,'task_start.subsystem_selector()']]],
-  ['subsystem_5ftask_5flister_21',['subsystem_task_lister',['../namespacetask__list.html#a401bb633880e7348c0c0f0b2c041085d',1,'task_list']]],
-  ['system_22',['SYSTEM',['../namespacetask__conclude.html#aeb22f3b385b965a3c0d3ae3031d3fde9',1,'task_conclude.SYSTEM()'],['../namespacetask__start.html#a670bc7d5f47b33d5a37703d10c376c37',1,'task_start.SYSTEM()']]],
-  ['system_23',['system',['../namespacetask__register.html#a4d1d5b383b2d435a86628e508ab85094',1,'task_register']]],
-  ['systems_24',['systems',['../namespacespreadsheet.html#aa2d5bab95df8ec78e12396aea646d2ba',1,'spreadsheet']]],
-  ['systemspreadsheet_25',['SystemSpreadsheet',['../classspreadsheet_1_1_system_spreadsheet.html',1,'spreadsheet']]]
+  ['_7ecan_50',['~Can',['../class_can.html#a43973d2de0ff08db8542a24815c586af',1,'Can']]],
+  ['_7ei2c_51',['~I2C',['../class_i2_c.html#afaad09fa9bdd23623bddbdcd7585a9fe',1,'I2C']]],
+  ['_7espi_52',['~SPI',['../class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4',1,'SPI']]]
 ];

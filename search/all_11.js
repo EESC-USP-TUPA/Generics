@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['tal_0',['TAL',['../md__docs_custom_pages__pagina_inicial.html',1,'']]],
+  ['task_1',['TASK',['../namespacetask__conclude.html#a79a0da25d4e71a7a1f904f4991da9426',1,'task_conclude.TASK()'],['../namespacetask__start.html#a195197cb757b952ddf40b04893e02232',1,'task_start.TASK()']]],
+  ['task_2',['task',['../namespacetask__register.html#a399500ba1108367c3f5e44f1b03f824b',1,'task_register']]],
+  ['task_5fconclude_3',['task_conclude',['../namespacetask__conclude.html',1,'']]],
+  ['task_5fconclude_2epy_4',['task_conclude.py',['../task__conclude_8py.html',1,'']]],
+  ['task_5flist_5',['task_list',['../namespacetask__list.html',1,'']]],
+  ['task_5flist_2epy_6',['task_list.py',['../task__list_8py.html',1,'']]],
+  ['task_5flister_7',['task_lister',['../namespacetask__list.html#ad493775e4acc8eba6e56e4dbabc84214',1,'task_list']]],
+  ['task_5fregister_8',['task_register',['../namespacetask__register.html',1,'']]],
+  ['task_5fregister_2epy_9',['task_register.py',['../task__register_8py.html',1,'']]],
+  ['task_5fselector_10',['task_selector',['../namespacetask__conclude.html#a48ae404b8cb22c059d8435ea80e083ed',1,'task_conclude.task_selector()'],['../namespacetask__start.html#ad418152753d900ad493ece85d94c5e46',1,'task_start.task_selector()']]],
+  ['task_5fstart_11',['task_start',['../namespacetask__start.html',1,'']]],
+  ['task_5fstart_2epy_12',['task_start.py',['../task__start_8py.html',1,'']]],
+  ['task_5fstarter_13',['task_starter',['../namespacetask__start.html#a261cbb128552e7992d81791c9c125f2e',1,'task_start']]],
+  ['telegram_5ftoken_14',['TELEGRAM_TOKEN',['../namespaceconfig.html#a445a72321f08fbec4e81e6c20c7df4f3',1,'config']]],
+  ['timeout_15',['timeout',['../namespacegeneric.html#a499585628f3a234688cef7037fd58771',1,'generic']]],
+  ['toggle_16',['toggle',['../class_g_p_i_o.html#ade8d7d4a06b41825dcdde3ff711b73e6',1,'GPIO']]],
+  ['tx_5fheader_17',['tx_header',['../class_can.html#a8aa5b2926a6bc3040b2413f38bdc4885',1,'Can']]]
+];

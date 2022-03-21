@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7ecan_50',['~Can',['../class_can.html#a43973d2de0ff08db8542a24815c586af',1,'Can']]],
-  ['_7ei2c_51',['~I2C',['../class_i2_c.html#afaad09fa9bdd23623bddbdcd7585a9fe',1,'I2C']]],
-  ['_7espi_52',['~SPI',['../class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4',1,'SPI']]]
+  ['tal_62',['TAL',['../md__docs_custom-pages_1__pagina_inicial.html',1,'']]],
+  ['toggle_63',['toggle',['../class_g_p_i_o.html#ade8d7d4a06b41825dcdde3ff711b73e6',1,'GPIO']]],
+  ['tx_5fheader_64',['tx_header',['../class_can.html#a8aa5b2926a6bc3040b2413f38bdc4885',1,'Can']]]
 ];

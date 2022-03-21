@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['i2c_24',['I2C',['../class_i2_c.html',1,'I2C'],['../class_i2_c.html#a0f28603e7b6eb49e12de5c753d617fe4',1,'I2C::I2C()']]],
-  ['i2c_2ecpp_25',['I2C.cpp',['../_i2_c_8cpp.html',1,'']]],
-  ['i2c_2ehpp_26',['I2C.hpp',['../_i2_c_8hpp.html',1,'']]],
-  ['iniciar_27',['iniciar',['../class_can.html#ad7d6fe131d5e3eeccc7468cf900a7f10',1,'Can']]],
-  ['interrupt_28',['interrupt',['../class_can.html#a545e60b1ac834dab75a3377cba748c1e',1,'Can']]]
+  ['hadc_29',['hadc',['../class_a_d_c.html#a747afcba794401c260162f1496d18542',1,'ADC']]],
+  ['handler_30',['handler',['../class_can.html#ae762158c35d3ad8aec9f9915873ac1b1',1,'Can::handler()'],['../class_i2_c.html#a5ced377753820da87518d9ed439cff5d',1,'I2C::handler()']]],
+  ['hspi_31',['hspi',['../class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964',1,'SPI']]]
 ];

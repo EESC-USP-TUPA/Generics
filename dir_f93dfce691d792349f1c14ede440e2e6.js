@@ -1,5 +1,8 @@
 var dir_f93dfce691d792349f1c14ede440e2e6 =
 [
+    [ "ADC.hpp", "_a_d_c_8hpp.html", [
+      [ "ADC", "class_a_d_c.html", "class_a_d_c" ]
+    ] ],
     [ "CAN.hpp", "_c_a_n_8hpp.html", [
       [ "Can", "class_can.html", "class_can" ]
     ] ],

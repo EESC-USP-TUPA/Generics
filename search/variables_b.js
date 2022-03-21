@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tx_5fheader_106',['tx_header',['../class_can.html#a8aa5b2926a6bc3040b2413f38bdc4885',1,'Can']]]
+  ['sens_5fnum_137',['sens_num',['../class_a_d_c.html#aa2c369428913da29117f879cd09ea860',1,'ADC']]],
+  ['sens_5fvec_5fval_138',['sens_vec_val',['../class_a_d_c.html#a4ac0cfc50845f80108775b004e26617e',1,'ADC']]]
 ];

@@ -112,61 +112,64 @@ $(document).ready(function(){initNavTree('_s_p_i_8hpp_source.html',''); initResi
 <div class="title">SPI.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_s_p_i_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifdef HAL_SPI_MODULE_ENABLED</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;stm32f1xx_hal_spi.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef SRC_SPI_HPP_</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define SRC_SPI_HPP_</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<a href="_s_p_i_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_comum_8hpp.html">Comum.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifdef HAL_SPI_MODULE_ENABLED</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;stm32f1xx_hal_spi.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef TAL_SPI</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define TAL_SPI</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_g_p_i_o_8hpp.html">GPIO.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_s_p_i.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_p_i.html">SPI</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">   13</a></span>&#160;    SPI_HandleTypeDef* <a class="code" href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">hspi</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">   16</a></span>&#160;    std::string <a class="code" href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">buffer</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">   17</a></span>&#160;    uint32_t <a class="code" href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">default_timeout</a> = HAL_MAX_DELAY;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a1040ab5bf6532c33c0cfdc4b52493177">   18</a></span>&#160;    std::vector&lt;GPIO&gt; <a class="code" href="class_s_p_i.html#a1040ab5bf6532c33c0cfdc4b52493177">chip_select</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a2ba081c29fbdecc704c6bf00b24d5205">   20</a></span>&#160;    <a class="code" href="class_s_p_i.html#a2ba081c29fbdecc704c6bf00b24d5205">SPI</a>(){};</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a6afba489953fbb98a52ba507641b28fe">   21</a></span>&#160;    <a class="code" href="class_s_p_i.html#a6afba489953fbb98a52ba507641b28fe">SPI</a>(SPI_HandleTypeDef* _hspi, uint8_t tamanho_buffer, uint32_t timeout)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    : <a class="code" href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">hspi</a>(_hspi), <a class="code" href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">default_timeout</a>(timeout) {<a class="code" href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">buffer</a>.resize(tamanho_buffer);};</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a2f285c95c63c159bbbb15020310be0d3">   23</a></span>&#160;    <a class="code" href="class_s_p_i.html#a2f285c95c63c159bbbb15020310be0d3">SPI</a>(SPI_HandleTypeDef* _hspi, std::vector&lt;GPIO&gt; _chip_select, uint8_t tamanho_buffer, uint32_t timeout)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    : <a class="code" href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">hspi</a>(_hspi), <a class="code" href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">default_timeout</a>(timeout), <a class="code" href="class_s_p_i.html#a1040ab5bf6532c33c0cfdc4b52493177">chip_select</a>(_chip_select) {<a class="code" href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">buffer</a>.resize(tamanho_buffer);};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4">   26</a></span>&#160;    <a class="code" href="class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4">~SPI</a>(){};</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_s_p_i.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_p_i.html">SPI</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">   15</a></span>&#160;    SPI_HandleTypeDef* <a class="code" href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">hspi</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">   18</a></span>&#160;    std::string <a class="code" href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">buffer</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">   19</a></span>&#160;    uint32_t <a class="code" href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">default_timeout</a> = HAL_MAX_DELAY;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a1040ab5bf6532c33c0cfdc4b52493177">   20</a></span>&#160;    std::vector&lt;GPIO&gt; <a class="code" href="class_s_p_i.html#a1040ab5bf6532c33c0cfdc4b52493177">chip_select</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a2ba081c29fbdecc704c6bf00b24d5205">   22</a></span>&#160;    <a class="code" href="class_s_p_i.html#a2ba081c29fbdecc704c6bf00b24d5205">SPI</a>(){};</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a6afba489953fbb98a52ba507641b28fe">   23</a></span>&#160;    <a class="code" href="class_s_p_i.html#a6afba489953fbb98a52ba507641b28fe">SPI</a>(SPI_HandleTypeDef* _hspi, uint8_t tamanho_buffer, uint32_t timeout)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    : <a class="code" href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">hspi</a>(_hspi), <a class="code" href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">default_timeout</a>(timeout) {<a class="code" href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">buffer</a>.resize(tamanho_buffer);};</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a2f285c95c63c159bbbb15020310be0d3">   25</a></span>&#160;    <a class="code" href="class_s_p_i.html#a2f285c95c63c159bbbb15020310be0d3">SPI</a>(SPI_HandleTypeDef* _hspi, std::vector&lt;GPIO&gt; _chip_select, uint8_t tamanho_buffer, uint32_t timeout)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    : <a class="code" href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">hspi</a>(_hspi), <a class="code" href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">default_timeout</a>(timeout), <a class="code" href="class_s_p_i.html#a1040ab5bf6532c33c0cfdc4b52493177">chip_select</a>(_chip_select) {<a class="code" href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">buffer</a>.resize(tamanho_buffer);};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_i.html#ad57016164283fdcf15d37490a0761be1">enviar_buffer</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_i.html#a8cf542bde5dfcc0e0e4e57f8521447e5">enviar</a>(uint8_t* mensagem, uint8_t tamanho_da_mensagem);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_i.html#adcc054be8d6ac1e5fbadc8b4fef3f928">receber_em_buffer</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_i.html#aa26f30a81caf7f46c5e9371b10ccfbb3">receber</a>(uint8_t* destino, uint8_t tamanho_da_mensagem);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_SPI_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4">   28</a></span>&#160;    <a class="code" href="class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4">~SPI</a>(){};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_i.html#ad57016164283fdcf15d37490a0761be1">enviar_buffer</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_i.html#a8cf542bde5dfcc0e0e4e57f8521447e5">enviar</a>(uint8_t* mensagem, uint8_t tamanho_da_mensagem);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_i.html#adcc054be8d6ac1e5fbadc8b4fef3f928">receber_em_buffer</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_p_i.html#aa26f30a81caf7f46c5e9371b10ccfbb3">receber</a>(uint8_t* destino, uint8_t tamanho_da_mensagem);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HAL_SPI_MODULE_ENABLED */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TAL_SPI */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HAL_SPI_MODULE_ENABLED */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_s_p_i_html_aa26f30a81caf7f46c5e9371b10ccfbb3"><div class="ttname"><a href="class_s_p_i.html#aa26f30a81caf7f46c5e9371b10ccfbb3">SPI::receber</a></div><div class="ttdeci">void receber(uint8_t *destino, uint8_t tamanho_da_mensagem)</div><div class="ttdef"><b>Definition:</b> SPI.cpp:17</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a2ba081c29fbdecc704c6bf00b24d5205"><div class="ttname"><a href="class_s_p_i.html#a2ba081c29fbdecc704c6bf00b24d5205">SPI::SPI</a></div><div class="ttdeci">SPI()</div><div class="ttdef"><b>Definition:</b> SPI.hpp:20</div></div>
-<div class="ttc" id="aclass_s_p_i_html_ad57016164283fdcf15d37490a0761be1"><div class="ttname"><a href="class_s_p_i.html#ad57016164283fdcf15d37490a0761be1">SPI::enviar_buffer</a></div><div class="ttdeci">void enviar_buffer()</div><div class="ttdef"><b>Definition:</b> SPI.cpp:4</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a2f285c95c63c159bbbb15020310be0d3"><div class="ttname"><a href="class_s_p_i.html#a2f285c95c63c159bbbb15020310be0d3">SPI::SPI</a></div><div class="ttdeci">SPI(SPI_HandleTypeDef *_hspi, std::vector&lt; GPIO &gt; _chip_select, uint8_t tamanho_buffer, uint32_t timeout)</div><div class="ttdef"><b>Definition:</b> SPI.hpp:23</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a1040ab5bf6532c33c0cfdc4b52493177"><div class="ttname"><a href="class_s_p_i.html#a1040ab5bf6532c33c0cfdc4b52493177">SPI::chip_select</a></div><div class="ttdeci">std::vector&lt; GPIO &gt; chip_select</div><div class="ttdef"><b>Definition:</b> SPI.hpp:18</div></div>
-<div class="ttc" id="aclass_s_p_i_html_adcc054be8d6ac1e5fbadc8b4fef3f928"><div class="ttname"><a href="class_s_p_i.html#adcc054be8d6ac1e5fbadc8b4fef3f928">SPI::receber_em_buffer</a></div><div class="ttdeci">void receber_em_buffer()</div><div class="ttdef"><b>Definition:</b> SPI.cpp:13</div></div>
-<div class="ttc" id="aclass_s_p_i_html"><div class="ttname"><a href="class_s_p_i.html">SPI</a></div><div class="ttdef"><b>Definition:</b> SPI.hpp:11</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a6babebf1ea3e8ff0330f43a3e2312ac4"><div class="ttname"><a href="class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4">SPI::~SPI</a></div><div class="ttdeci">~SPI()</div><div class="ttdef"><b>Definition:</b> SPI.hpp:26</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a6afba489953fbb98a52ba507641b28fe"><div class="ttname"><a href="class_s_p_i.html#a6afba489953fbb98a52ba507641b28fe">SPI::SPI</a></div><div class="ttdeci">SPI(SPI_HandleTypeDef *_hspi, uint8_t tamanho_buffer, uint32_t timeout)</div><div class="ttdef"><b>Definition:</b> SPI.hpp:21</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a8cf542bde5dfcc0e0e4e57f8521447e5"><div class="ttname"><a href="class_s_p_i.html#a8cf542bde5dfcc0e0e4e57f8521447e5">SPI::enviar</a></div><div class="ttdeci">void enviar(uint8_t *mensagem, uint8_t tamanho_da_mensagem)</div><div class="ttdef"><b>Definition:</b> SPI.cpp:8</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a282eae661333820cdd3fdeb675653d3a"><div class="ttname"><a href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">SPI::default_timeout</a></div><div class="ttdeci">uint32_t default_timeout</div><div class="ttdef"><b>Definition:</b> SPI.hpp:17</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a4a92a994ac5734bceec0ec003e3dc964"><div class="ttname"><a href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">SPI::hspi</a></div><div class="ttdeci">SPI_HandleTypeDef * hspi</div><div class="ttdef"><b>Definition:</b> SPI.hpp:13</div></div>
-<div class="ttc" id="aclass_s_p_i_html_a52c0018544705a569b45b11721be16d5"><div class="ttname"><a href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">SPI::buffer</a></div><div class="ttdeci">std::string buffer</div><div class="ttdef"><b>Definition:</b> SPI.hpp:16</div></div>
+<div class="ttc" id="aclass_s_p_i_html_aa26f30a81caf7f46c5e9371b10ccfbb3"><div class="ttname"><a href="class_s_p_i.html#aa26f30a81caf7f46c5e9371b10ccfbb3">SPI::receber</a></div><div class="ttdeci">void receber(uint8_t *destino, uint8_t tamanho_da_mensagem)</div><div class="ttdef"><b>Definition:</b> SPI.cpp:19</div></div>
+<div class="ttc" id="aclass_s_p_i_html_a2ba081c29fbdecc704c6bf00b24d5205"><div class="ttname"><a href="class_s_p_i.html#a2ba081c29fbdecc704c6bf00b24d5205">SPI::SPI</a></div><div class="ttdeci">SPI()</div><div class="ttdef"><b>Definition:</b> SPI.hpp:22</div></div>
+<div class="ttc" id="aclass_s_p_i_html_ad57016164283fdcf15d37490a0761be1"><div class="ttname"><a href="class_s_p_i.html#ad57016164283fdcf15d37490a0761be1">SPI::enviar_buffer</a></div><div class="ttdeci">void enviar_buffer()</div><div class="ttdef"><b>Definition:</b> SPI.cpp:6</div></div>
+<div class="ttc" id="aclass_s_p_i_html_a2f285c95c63c159bbbb15020310be0d3"><div class="ttname"><a href="class_s_p_i.html#a2f285c95c63c159bbbb15020310be0d3">SPI::SPI</a></div><div class="ttdeci">SPI(SPI_HandleTypeDef *_hspi, std::vector&lt; GPIO &gt; _chip_select, uint8_t tamanho_buffer, uint32_t timeout)</div><div class="ttdef"><b>Definition:</b> SPI.hpp:25</div></div>
+<div class="ttc" id="aclass_s_p_i_html_a1040ab5bf6532c33c0cfdc4b52493177"><div class="ttname"><a href="class_s_p_i.html#a1040ab5bf6532c33c0cfdc4b52493177">SPI::chip_select</a></div><div class="ttdeci">std::vector&lt; GPIO &gt; chip_select</div><div class="ttdef"><b>Definition:</b> SPI.hpp:20</div></div>
+<div class="ttc" id="aclass_s_p_i_html_adcc054be8d6ac1e5fbadc8b4fef3f928"><div class="ttname"><a href="class_s_p_i.html#adcc054be8d6ac1e5fbadc8b4fef3f928">SPI::receber_em_buffer</a></div><div class="ttdeci">void receber_em_buffer()</div><div class="ttdef"><b>Definition:</b> SPI.cpp:15</div></div>
+<div class="ttc" id="aclass_s_p_i_html"><div class="ttname"><a href="class_s_p_i.html">SPI</a></div><div class="ttdef"><b>Definition:</b> SPI.hpp:13</div></div>
+<div class="ttc" id="aclass_s_p_i_html_a6babebf1ea3e8ff0330f43a3e2312ac4"><div class="ttname"><a href="class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4">SPI::~SPI</a></div><div class="ttdeci">~SPI()</div><div class="ttdef"><b>Definition:</b> SPI.hpp:28</div></div>
+<div class="ttc" id="a_comum_8hpp_html"><div class="ttname"><a href="_comum_8hpp.html">Comum.hpp</a></div></div>
+<div class="ttc" id="aclass_s_p_i_html_a6afba489953fbb98a52ba507641b28fe"><div class="ttname"><a href="class_s_p_i.html#a6afba489953fbb98a52ba507641b28fe">SPI::SPI</a></div><div class="ttdeci">SPI(SPI_HandleTypeDef *_hspi, uint8_t tamanho_buffer, uint32_t timeout)</div><div class="ttdef"><b>Definition:</b> SPI.hpp:23</div></div>
+<div class="ttc" id="aclass_s_p_i_html_a8cf542bde5dfcc0e0e4e57f8521447e5"><div class="ttname"><a href="class_s_p_i.html#a8cf542bde5dfcc0e0e4e57f8521447e5">SPI::enviar</a></div><div class="ttdeci">void enviar(uint8_t *mensagem, uint8_t tamanho_da_mensagem)</div><div class="ttdef"><b>Definition:</b> SPI.cpp:10</div></div>
+<div class="ttc" id="aclass_s_p_i_html_a282eae661333820cdd3fdeb675653d3a"><div class="ttname"><a href="class_s_p_i.html#a282eae661333820cdd3fdeb675653d3a">SPI::default_timeout</a></div><div class="ttdeci">uint32_t default_timeout</div><div class="ttdef"><b>Definition:</b> SPI.hpp:19</div></div>
+<div class="ttc" id="aclass_s_p_i_html_a4a92a994ac5734bceec0ec003e3dc964"><div class="ttname"><a href="class_s_p_i.html#a4a92a994ac5734bceec0ec003e3dc964">SPI::hspi</a></div><div class="ttdeci">SPI_HandleTypeDef * hspi</div><div class="ttdef"><b>Definition:</b> SPI.hpp:15</div></div>
+<div class="ttc" id="aclass_s_p_i_html_a52c0018544705a569b45b11721be16d5"><div class="ttname"><a href="class_s_p_i.html#a52c0018544705a569b45b11721be16d5">SPI::buffer</a></div><div class="ttdeci">std::string buffer</div><div class="ttdef"><b>Definition:</b> SPI.hpp:18</div></div>
 <div class="ttc" id="a_g_p_i_o_8hpp_html"><div class="ttname"><a href="_g_p_i_o_8hpp.html">GPIO.hpp</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

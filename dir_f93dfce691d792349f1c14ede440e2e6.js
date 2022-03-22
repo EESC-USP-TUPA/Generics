@@ -6,6 +6,7 @@ var dir_f93dfce691d792349f1c14ede440e2e6 =
     [ "CAN.hpp", "_c_a_n_8hpp.html", [
       [ "Can", "class_can.html", "class_can" ]
     ] ],
+    [ "Comum.hpp", "_comum_8hpp.html", null ],
     [ "Filtros.hpp", "_filtros_8hpp.html", "_filtros_8hpp" ],
     [ "GPIO.hpp", "_g_p_i_o_8hpp.html", [
       [ "GPIO", "class_g_p_i_o.html", "class_g_p_i_o" ]

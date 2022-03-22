@@ -112,43 +112,45 @@ $(document).ready(function(){initNavTree('_i2_c_8hpp_source.html',''); initResiz
 <div class="title">I2C.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_i2_c_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifdef HAL_I2C_MODULE_ENABLED</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;stm32f1xx_hal_i2c.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef I2C_H</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define I2C_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_i2_c.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i2_c.html">I2C</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569">   12</a></span>&#160;        uint32_t <a class="code" href="class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569">delay</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_i2_c.html#a5ced377753820da87518d9ed439cff5d">   13</a></span>&#160;        I2C_HandleTypeDef *<a class="code" href="class_i2_c.html#a5ced377753820da87518d9ed439cff5d">handler</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_i2_c.html#ac8ae1edf6b07e018007f5507a7416a02">   14</a></span>&#160;        uint16_t <a class="code" href="class_i2_c.html#ac8ae1edf6b07e018007f5507a7416a02">endereco</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_i2_c.html#a0f28603e7b6eb49e12de5c753d617fe4">I2C</a>(I2C_HandleTypeDef* <a class="code" href="class_i2_c.html#a5ced377753820da87518d9ed439cff5d">handler</a>, uint16_t <a class="code" href="class_i2_c.html#ac8ae1edf6b07e018007f5507a7416a02">endereco</a>, uint32_t <a class="code" href="class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569">delay</a>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_i2_c.html#afaad09fa9bdd23623bddbdcd7585a9fe">~I2C</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        uint8_t *<a class="code" href="class_i2_c.html#a470fad0ff530198524fc5270ee4b13d0">ler</a>(uint16_t tam_registrador, uint16_t registrador, uint16_t tamanho);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_i2_c.html#a92332c9bea2e65e6e0ec4e640d0b287e">escrever</a>(uint16_t tam_registrador, uint16_t registrador, uint16_t tamanho, uint8_t* dados);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<a href="_i2_c_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_comum_8hpp.html">Comum.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifdef HAL_I2C_MODULE_ENABLED</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;stm32f1xx_hal_i2c.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef TAL_I2C</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define TAL_I2C</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_i2_c.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i2_c.html">I2C</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569">   14</a></span>&#160;        uint32_t <a class="code" href="class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569">delay</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_i2_c.html#a5ced377753820da87518d9ed439cff5d">   15</a></span>&#160;        I2C_HandleTypeDef *<a class="code" href="class_i2_c.html#a5ced377753820da87518d9ed439cff5d">handler</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_i2_c.html#ac8ae1edf6b07e018007f5507a7416a02">   16</a></span>&#160;        uint16_t <a class="code" href="class_i2_c.html#ac8ae1edf6b07e018007f5507a7416a02">endereco</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_i2_c.html#a0f28603e7b6eb49e12de5c753d617fe4">I2C</a>(I2C_HandleTypeDef* <a class="code" href="class_i2_c.html#a5ced377753820da87518d9ed439cff5d">handler</a>, uint16_t <a class="code" href="class_i2_c.html#ac8ae1edf6b07e018007f5507a7416a02">endereco</a>, uint32_t <a class="code" href="class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569">delay</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_i2_c.html#afaad09fa9bdd23623bddbdcd7585a9fe">~I2C</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        uint8_t *<a class="code" href="class_i2_c.html#a470fad0ff530198524fc5270ee4b13d0">ler</a>(uint16_t tam_registrador, uint16_t registrador, uint16_t tamanho);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_i2_c.html#a92332c9bea2e65e6e0ec4e640d0b287e">escrever</a>(uint16_t tam_registrador, uint16_t registrador, uint16_t tamanho, uint8_t* dados);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HAL_I2C_MODULE_ENABLED */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TAL_I2C */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HAL_I2C_MODULE_ENABLED */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_i2_c_html_a92332c9bea2e65e6e0ec4e640d0b287e"><div class="ttname"><a href="class_i2_c.html#a92332c9bea2e65e6e0ec4e640d0b287e">I2C::escrever</a></div><div class="ttdeci">bool escrever(uint16_t tam_registrador, uint16_t registrador, uint16_t tamanho, uint8_t *dados)</div><div class="ttdef"><b>Definition:</b> I2C.cpp:23</div></div>
-<div class="ttc" id="aclass_i2_c_html_a7f3bb2ad38b2d3a86a3a6b5125e30569"><div class="ttname"><a href="class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569">I2C::delay</a></div><div class="ttdeci">uint32_t delay</div><div class="ttdef"><b>Definition:</b> I2C.hpp:12</div></div>
-<div class="ttc" id="aclass_i2_c_html_afaad09fa9bdd23623bddbdcd7585a9fe"><div class="ttname"><a href="class_i2_c.html#afaad09fa9bdd23623bddbdcd7585a9fe">I2C::~I2C</a></div><div class="ttdeci">~I2C()</div><div class="ttdef"><b>Definition:</b> I2C.cpp:11</div></div>
-<div class="ttc" id="aclass_i2_c_html"><div class="ttname"><a href="class_i2_c.html">I2C</a></div><div class="ttdef"><b>Definition:</b> I2C.hpp:10</div></div>
-<div class="ttc" id="aclass_i2_c_html_a0f28603e7b6eb49e12de5c753d617fe4"><div class="ttname"><a href="class_i2_c.html#a0f28603e7b6eb49e12de5c753d617fe4">I2C::I2C</a></div><div class="ttdeci">I2C(I2C_HandleTypeDef *handler, uint16_t endereco, uint32_t delay)</div><div class="ttdef"><b>Definition:</b> I2C.cpp:4</div></div>
-<div class="ttc" id="aclass_i2_c_html_a470fad0ff530198524fc5270ee4b13d0"><div class="ttname"><a href="class_i2_c.html#a470fad0ff530198524fc5270ee4b13d0">I2C::ler</a></div><div class="ttdeci">uint8_t * ler(uint16_t tam_registrador, uint16_t registrador, uint16_t tamanho)</div><div class="ttdef"><b>Definition:</b> I2C.cpp:16</div></div>
-<div class="ttc" id="aclass_i2_c_html_ac8ae1edf6b07e018007f5507a7416a02"><div class="ttname"><a href="class_i2_c.html#ac8ae1edf6b07e018007f5507a7416a02">I2C::endereco</a></div><div class="ttdeci">uint16_t endereco</div><div class="ttdef"><b>Definition:</b> I2C.hpp:14</div></div>
-<div class="ttc" id="aclass_i2_c_html_a5ced377753820da87518d9ed439cff5d"><div class="ttname"><a href="class_i2_c.html#a5ced377753820da87518d9ed439cff5d">I2C::handler</a></div><div class="ttdeci">I2C_HandleTypeDef * handler</div><div class="ttdef"><b>Definition:</b> I2C.hpp:13</div></div>
+<div class="ttc" id="aclass_i2_c_html_a92332c9bea2e65e6e0ec4e640d0b287e"><div class="ttname"><a href="class_i2_c.html#a92332c9bea2e65e6e0ec4e640d0b287e">I2C::escrever</a></div><div class="ttdeci">bool escrever(uint16_t tam_registrador, uint16_t registrador, uint16_t tamanho, uint8_t *dados)</div><div class="ttdef"><b>Definition:</b> I2C.cpp:24</div></div>
+<div class="ttc" id="aclass_i2_c_html_a7f3bb2ad38b2d3a86a3a6b5125e30569"><div class="ttname"><a href="class_i2_c.html#a7f3bb2ad38b2d3a86a3a6b5125e30569">I2C::delay</a></div><div class="ttdeci">uint32_t delay</div><div class="ttdef"><b>Definition:</b> I2C.hpp:14</div></div>
+<div class="ttc" id="a_comum_8hpp_html"><div class="ttname"><a href="_comum_8hpp.html">Comum.hpp</a></div></div>
+<div class="ttc" id="aclass_i2_c_html_afaad09fa9bdd23623bddbdcd7585a9fe"><div class="ttname"><a href="class_i2_c.html#afaad09fa9bdd23623bddbdcd7585a9fe">I2C::~I2C</a></div><div class="ttdeci">~I2C()</div><div class="ttdef"><b>Definition:</b> I2C.cpp:12</div></div>
+<div class="ttc" id="aclass_i2_c_html"><div class="ttname"><a href="class_i2_c.html">I2C</a></div><div class="ttdef"><b>Definition:</b> I2C.hpp:12</div></div>
+<div class="ttc" id="aclass_i2_c_html_a0f28603e7b6eb49e12de5c753d617fe4"><div class="ttname"><a href="class_i2_c.html#a0f28603e7b6eb49e12de5c753d617fe4">I2C::I2C</a></div><div class="ttdeci">I2C(I2C_HandleTypeDef *handler, uint16_t endereco, uint32_t delay)</div><div class="ttdef"><b>Definition:</b> I2C.cpp:5</div></div>
+<div class="ttc" id="aclass_i2_c_html_a470fad0ff530198524fc5270ee4b13d0"><div class="ttname"><a href="class_i2_c.html#a470fad0ff530198524fc5270ee4b13d0">I2C::ler</a></div><div class="ttdeci">uint8_t * ler(uint16_t tam_registrador, uint16_t registrador, uint16_t tamanho)</div><div class="ttdef"><b>Definition:</b> I2C.cpp:17</div></div>
+<div class="ttc" id="aclass_i2_c_html_ac8ae1edf6b07e018007f5507a7416a02"><div class="ttname"><a href="class_i2_c.html#ac8ae1edf6b07e018007f5507a7416a02">I2C::endereco</a></div><div class="ttdeci">uint16_t endereco</div><div class="ttdef"><b>Definition:</b> I2C.hpp:16</div></div>
+<div class="ttc" id="aclass_i2_c_html_a5ced377753820da87518d9ed439cff5d"><div class="ttname"><a href="class_i2_c.html#a5ced377753820da87518d9ed439cff5d">I2C::handler</a></div><div class="ttdeci">I2C_HandleTypeDef * handler</div><div class="ttdef"><b>Definition:</b> I2C.hpp:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

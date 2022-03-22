@@ -112,29 +112,32 @@ $(document).ready(function(){initNavTree('_filtros_8hpp_source.html',''); initRe
 <div class="title">Filtros.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_filtros_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FILTROS</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FILTROS</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespace_filtros.html">   12</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_filtros.html">Filtros</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::vector&lt;T&gt; <a class="code" href="namespace_filtros.html#a150fcec8d26f695355e898bfca577f9d">media_movel_simples</a>(std::vector&lt;T&gt; dados, uint8_t tamanho_da_amostra);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::vector&lt;T&gt; <a class="code" href="namespace_filtros.html#a5d7bd652b8dc310664691411ace15440">media_movel_ponderada</a>(std::vector&lt;T&gt; dados, std::vector&lt;float&gt; pesos);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::vector&lt;T&gt; <a class="code" href="namespace_filtros.html#a137a8a4c0f2e0d95377b1acfad20c570">media_movel_exponencial</a>(std::vector&lt;T&gt; dados, uint8_t tamanho_da_amostra);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="_filtros_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_comum_8hpp.html">Comum.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TAL_FILTROS</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TAL_FILTROS</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespace_filtros.html">   14</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_filtros.html">Filtros</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::vector&lt;T&gt; <a class="code" href="namespace_filtros.html#a150fcec8d26f695355e898bfca577f9d">media_movel_simples</a>(std::vector&lt;T&gt; dados, uint8_t tamanho_da_amostra);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::vector&lt;T&gt; <a class="code" href="namespace_filtros.html#a5d7bd652b8dc310664691411ace15440">media_movel_ponderada</a>(std::vector&lt;T&gt; dados, std::vector&lt;float&gt; pesos);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::vector&lt;T&gt; <a class="code" href="namespace_filtros.html#a137a8a4c0f2e0d95377b1acfad20c570">media_movel_exponencial</a>(std::vector&lt;T&gt; dados, uint8_t tamanho_da_amostra);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TAL_FILTROS */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_filtros_html"><div class="ttname"><a href="namespace_filtros.html">Filtros</a></div><div class="ttdoc">Namespace com implementação de várias funções de filtragem.</div><div class="ttdef"><b>Definition:</b> Filtros.hpp:12</div></div>
+<div class="ttc" id="anamespace_filtros_html"><div class="ttname"><a href="namespace_filtros.html">Filtros</a></div><div class="ttdoc">Namespace com implementação de várias funções de filtragem.</div><div class="ttdef"><b>Definition:</b> Filtros.hpp:14</div></div>
+<div class="ttc" id="a_comum_8hpp_html"><div class="ttname"><a href="_comum_8hpp.html">Comum.hpp</a></div></div>
 <div class="ttc" id="anamespace_filtros_html_a5d7bd652b8dc310664691411ace15440"><div class="ttname"><a href="namespace_filtros.html#a5d7bd652b8dc310664691411ace15440">Filtros::media_movel_ponderada</a></div><div class="ttdeci">std::vector&lt; T &gt; media_movel_ponderada(std::vector&lt; T &gt; dados, std::vector&lt; float &gt; pesos)</div><div class="ttdef"><b>Definition:</b> Filtros.cpp:36</div></div>
 <div class="ttc" id="anamespace_filtros_html_a137a8a4c0f2e0d95377b1acfad20c570"><div class="ttname"><a href="namespace_filtros.html#a137a8a4c0f2e0d95377b1acfad20c570">Filtros::media_movel_exponencial</a></div><div class="ttdeci">std::vector&lt; T &gt; media_movel_exponencial(std::vector&lt; T &gt; dados, uint8_t tamanho_da_amostra)</div><div class="ttdef"><b>Definition:</b> Filtros.cpp:69</div></div>
 <div class="ttc" id="anamespace_filtros_html_a150fcec8d26f695355e898bfca577f9d"><div class="ttname"><a href="namespace_filtros.html#a150fcec8d26f695355e898bfca577f9d">Filtros::media_movel_simples</a></div><div class="ttdeci">std::vector&lt; T &gt; media_movel_simples(std::vector&lt; T &gt; dados, uint8_t tamanho_da_amostra)</div><div class="ttdef"><b>Definition:</b> Filtros.cpp:6</div></div>

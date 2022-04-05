@@ -6,8 +6,6 @@
 #define TAL_ADC
 
 #include "stm32f1xx_hal.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 #define sens_num 10
 
@@ -23,11 +21,8 @@ public:
 	ADC_HandleTypeDef* Get_chanel();
 	uint32_t *Get_valores();
 	uint32_t* Get_buffer();
-	void Set_buffer();
 	void Ler_DMA();
 	void Parar_DMA();
-
-
 
 };
 

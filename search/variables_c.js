@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tx_5fheader_137',['tx_header',['../class_can.html#a8aa5b2926a6bc3040b2413f38bdc4885',1,'Can']]]
+  ['valores_131',['valores',['../class_a_d_c.html#a53a5db897321aad77420b49fead68a2a',1,'ADC']]]
 ];

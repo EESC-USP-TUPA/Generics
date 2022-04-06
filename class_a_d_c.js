@@ -7,7 +7,7 @@ var class_a_d_c =
     [ "Get_valores", "class_a_d_c.html#adb461e9ad8200e21c037df05d9911556", null ],
     [ "Ler_DMA", "class_a_d_c.html#afab98da4f3ea000f51a1d2dc8522045c", null ],
     [ "Parar_DMA", "class_a_d_c.html#a68d34074d604c7bc126838169781b783", null ],
-    [ "buffer", "class_a_d_c.html#a2efcd7529635a0b8e0f46f503bc1e52d", null ],
+    [ "buffer", "class_a_d_c.html#a36460ca578cf09115f0fb87ed7d85d94", null ],
     [ "hadc", "class_a_d_c.html#a747afcba794401c260162f1496d18542", null ],
-    [ "valores", "class_a_d_c.html#a53a5db897321aad77420b49fead68a2a", null ]
+    [ "valores", "class_a_d_c.html#aa51d0f3648de97b23cc0c27b115f44af", null ]
 ];

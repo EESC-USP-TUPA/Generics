@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['valores_60',['valores',['../class_a_d_c.html#a53a5db897321aad77420b49fead68a2a',1,'ADC']]]
+  ['valores_60',['valores',['../class_a_d_c.html#aa51d0f3648de97b23cc0c27b115f44af',1,'ADC']]]
 ];

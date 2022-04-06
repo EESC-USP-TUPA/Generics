@@ -7,13 +7,13 @@
 
 #include "stm32f1xx_hal.h"
 
-#define sens_num 10
+#define qtd_sensores 10
 
 class ADC {
 private:
 	ADC_HandleTypeDef *hadc;
-	uint32_t valores[sens_num];
-	uint32_t buffer[10];
+	uint32_t valores[qtd_sensores];
+	uint32_t buffer[5];
 
 public:
 	ADC( ADC_HandleTypeDef *hadcx);

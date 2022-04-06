@@ -1,4 +1,5 @@
 #include "ADC.hpp"
+#include <cstdlib>
 
 #ifdef TAL_ADC
 

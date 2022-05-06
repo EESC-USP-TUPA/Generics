@@ -7,22 +7,22 @@
 
 #include "stm32f1xx_hal.h"
 
-#define qtd_sensores 10
-
 class ADC {
 private:
 	ADC_HandleTypeDef *hadc;
-	uint32_t valores[qtd_sensores];
-	uint32_t buffer[5];
+	uint8_t qtd_sensores;
+	uint32_t* valores;
+	uint32_t* buffer;
 
 public:
-	ADC( ADC_HandleTypeDef *hadcx);
+	ADC( ADC_HandleTypeDef *hadcx, uint8_t numero_sensores);
 	~ADC();
-	ADC_HandleTypeDef* Get_chanel();
-	uint32_t *Get_valores();
-	uint32_t* Get_buffer();
-	void Ler_DMA();
-	void Parar_DMA();
+	ADC_HandleTypeDef* retornar_canal();
+	uint32_t * retornar_valores();
+	uint32_t* retornar_buffer();
+	void ler_DMA();
+	void parar_DMA();
+	uint8_t retornar_qtd_sensores();
 
 };
 

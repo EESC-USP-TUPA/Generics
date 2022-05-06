@@ -115,15 +115,17 @@ $(document).ready(function(){initNavTree('class_a_d_c.html',''); initResizable()
 
 <p>This is the complete list of members for <a class="el" href="class_a_d_c.html">ADC</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#a7480a07944559b61f648fcf1d3529b85">ADC</a>(ADC_HandleTypeDef *hadcx)</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_d_c.html#a36460ca578cf09115f0fb87ed7d85d94">buffer</a></td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#a172158f53e568f2622db7646a1560b80">Get_buffer</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_d_c.html#acca48a09cd740a7d3506258c518fd9b6">Get_chanel</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#adb461e9ad8200e21c037df05d9911556">Get_valores</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_d_c.html#a747afcba794401c260162f1496d18542">hadc</a></td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#afab98da4f3ea000f51a1d2dc8522045c">Ler_DMA</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_d_c.html#a68d34074d604c7bc126838169781b783">Parar_DMA</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#aa51d0f3648de97b23cc0c27b115f44af">valores</a></td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#a4b1081c044503cead5b764a435ed25e7">ADC</a>(ADC_HandleTypeDef *hadcx, uint8_t numero_sensores)</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_d_c.html#ab350a840e72889280526a59fd472f7dd">buffer</a></td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#a747afcba794401c260162f1496d18542">hadc</a></td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_d_c.html#ab3a5ade63a89c8eed4cc436832133e9b">ler_DMA</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#ae857dafc2e867ddeb4e021ee61ec917f">parar_DMA</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_d_c.html#a9a7f30e9bcc264794f19d661b0c3cf9d">qtd_sensores</a></td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#a44f83300443f991628590aee6cd0592e">retornar_buffer</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_d_c.html#aeede4bca84b5ea8f3a09d777d5e5c55a">retornar_canal</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#a1f2448e48fc035d9391afcf5d3b4d0a7">retornar_qtd_sensores</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_d_c.html#aeb5edd04ded2c37d6fbb6a55f7f2ddd7">retornar_valores</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_d_c.html#adcead98507354084bd231ca8d6927c1e">valores</a></td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_d_c.html#aefd878291d0c14aa524df99af5a63148">~ADC</a>()</td><td class="entry"><a class="el" href="class_a_d_c.html">ADC</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->

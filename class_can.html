@@ -127,8 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad7d6fe131d5e3eeccc7468cf900a7f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7e3f9ab5eb8f74c51ef8a96f4f835e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#ae7e3f9ab5eb8f74c51ef8a96f4f835e0">setup</a> (uint32_t <a class="el" href="class_can.html#a545e60b1ac834dab75a3377cba748c1e">interrupt</a>, uint32_t id_high, uint32_t id_low, uint32_t mask_high, uint32_t mask_low)</td></tr>
 <tr class="separator:ae7e3f9ab5eb8f74c51ef8a96f4f835e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3343c00d88f9b7460a1d6c1ebfb9bbf"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#ad3343c00d88f9b7460a1d6c1ebfb9bbf">ler</a> ()</td></tr>
-<tr class="separator:ad3343c00d88f9b7460a1d6c1ebfb9bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f217c501e2eb2256d40f663d1f83526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a3f217c501e2eb2256d40f663d1f83526">guardar_dados</a> (uint8_t *alvo)</td></tr>
+<tr class="separator:a3f217c501e2eb2256d40f663d1f83526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e67a8a35ded18f35c79ab7d43ca7a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a98e67a8a35ded18f35c79ab7d43ca7a6">enviar</a> (uint8_t *dados, uint8_t tamanho)</td></tr>
 <tr class="separator:a98e67a8a35ded18f35c79ab7d43ca7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331fd2bb34627200b531e47427451b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a331fd2bb34627200b531e47427451b91">esperar</a> ()</td></tr>
@@ -150,6 +150,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a39b2ca8f9eeda3c40a61b3d4fc60b084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a545e60b1ac834dab75a3377cba748c1e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a545e60b1ac834dab75a3377cba748c1e">interrupt</a></td></tr>
 <tr class="separator:a545e60b1ac834dab75a3377cba748c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9911c566c9b2fabd28a70d3cdb93cf2b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a9911c566c9b2fabd28a70d3cdb93cf2b">dados_recebidos</a> [8]</td></tr>
+<tr class="separator:a9911c566c9b2fabd28a70d3cdb93cf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7680303229e025740d7a50e0ef7df1a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a7680303229e025740d7a50e0ef7df1a8">lock</a></td></tr>
 <tr class="separator:a7680303229e025740d7a50e0ef7df1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -259,6 +261,24 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3f217c501e2eb2256d40f663d1f83526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f217c501e2eb2256d40f663d1f83526">&#9670;&nbsp;</a></span>guardar_dados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Can::guardar_dados </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>alvo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad7d6fe131d5e3eeccc7468cf900a7f10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7d6fe131d5e3eeccc7468cf900a7f10">&#9670;&nbsp;</a></span>iniciar()</h2>
 
@@ -281,23 +301,6 @@ Private Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad3343c00d88f9b7460a1d6c1ebfb9bbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3343c00d88f9b7460a1d6c1ebfb9bbf">&#9670;&nbsp;</a></span>ler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t * Can::ler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -351,6 +354,28 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9911c566c9b2fabd28a70d3cdb93cf2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9911c566c9b2fabd28a70d3cdb93cf2b">&#9670;&nbsp;</a></span>dados_recebidos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Can::dados_recebidos[8]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3276009b0150ecb538a9ced162760385"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3276009b0150ecb538a9ced162760385">&#9670;&nbsp;</a></span>filtro</h2>
 

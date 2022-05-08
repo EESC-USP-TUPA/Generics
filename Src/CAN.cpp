@@ -31,7 +31,6 @@ void Can::guardar_dados(uint8_t* alvo) {
     this->lock = false;
     HAL_CAN_GetRxMessage(this->handler, this->interrupt, &(this->rx_header), dados_recebidos);
     memcpy(alvo, dados_recebidos, 8);
-    return dados;
 }
 
 void Can::setup(uint32_t interrupt, uint32_t id_high, uint32_t id_low, uint32_t mask_high, uint32_t mask_low) {

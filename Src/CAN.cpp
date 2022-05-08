@@ -27,10 +27,10 @@ bool Can::enviar(uint8_t *dados, uint8_t tamanho) {
     return (HAL_CAN_AddTxMessage(this->handler, &(this->tx_header), dados, &(this->mailbox)) == HAL_OK);
 }
 
-uint8_t *Can::ler() {
+void Can::guardar_dados(uint8_t* alvo) {
     this->lock = false;
-    uint8_t *dados = (uint8_t*)malloc(8 * sizeof(uint8_t));
-    HAL_CAN_GetRxMessage(this->handler, this->interrupt, &(this->rx_header), dados);
+    HAL_CAN_GetRxMessage(this->handler, this->interrupt, &(this->rx_header), dados_recebidos);
+    memcpy(alvo, dados_recebidos, 8);
     return dados;
 }
 

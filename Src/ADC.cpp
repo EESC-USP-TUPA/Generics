@@ -35,7 +35,7 @@ uint8_t ADC::retornar_qtd_sensores() {
 
 
 void ADC::ler_DMA() {
-	HAL_ADC_Start_DMA(this->hadc, this->buffer, 10);
+	HAL_ADC_Start_DMA(this->hadc, this->buffer, this->qtd_sensores);
 }
 
 void ADC::parar_DMA() {

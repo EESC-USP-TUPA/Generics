@@ -1,6 +1,6 @@
 var class_can =
 [
-    [ "Can", "class_can.html#a42692623ed35d0df7ec1f3da67dc8066", null ],
+    [ "Can", "class_can.html#a958b76db4c03c2e02e2841b96e9e188d", null ],
     [ "~Can", "class_can.html#a43973d2de0ff08db8542a24815c586af", null ],
     [ "definir_filtro", "class_can.html#a01c0680e778fdfe847d26e895bb160a8", null ],
     [ "enviar", "class_can.html#ac98fca430206c1780c6b07ae7a3e3a1a", null ],

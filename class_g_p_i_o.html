@@ -125,14 +125,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab443a641cef81b1a9ec0211c5aa9c1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fc2b93f6c66e85fab2f6cfadc486971"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#a1fc2b93f6c66e85fab2f6cfadc486971">GPIO</a> (GPIO_TypeDef *endereco_porta, uint16_t endereco_pino)</td></tr>
 <tr class="separator:a1fc2b93f6c66e85fab2f6cfadc486971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d02df5cc317d938691346ee0a6aac53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#a3d02df5cc317d938691346ee0a6aac53">escrever</a> (GPIO_PinState estado)</td></tr>
-<tr class="separator:a3d02df5cc317d938691346ee0a6aac53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab7724a81ced604abe323e21903e6fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#aab7724a81ced604abe323e21903e6fe5">multipla_escrita</a> (std::vector&lt; GPIO_TypeDef * &gt; portas, std::vector&lt; uint16_t &gt; pinos, GPIO_PinState estado)</td></tr>
-<tr class="separator:aab7724a81ced604abe323e21903e6fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4789d30caaeb8a2d4767ca4a9a3703dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#a4789d30caaeb8a2d4767ca4a9a3703dd">ligar</a> ()</td></tr>
+<tr class="separator:a4789d30caaeb8a2d4767ca4a9a3703dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47e81181ef432bab986355db122b7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#ac47e81181ef432bab986355db122b7e7">desligar</a> ()</td></tr>
+<tr class="separator:ac47e81181ef432bab986355db122b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc51b3b9cc48c0b454444c917a7c76e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#acc51b3b9cc48c0b454444c917a7c76e7">inverter</a> ()</td></tr>
+<tr class="separator:acc51b3b9cc48c0b454444c917a7c76e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a3e9d37b5034cb7e3ebca7756458b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#a90a3e9d37b5034cb7e3ebca7756458b3">ler</a> ()</td></tr>
 <tr class="separator:a90a3e9d37b5034cb7e3ebca7756458b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade8d7d4a06b41825dcdde3ff711b73e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#ade8d7d4a06b41825dcdde3ff711b73e6">toggle</a> (uint32_t tempo_em_alto=1000, uint32_t tempo_em_baixo=1000)</td></tr>
-<tr class="separator:ade8d7d4a06b41825dcdde3ff711b73e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cf1a3df6b233f5a7649ba662c07aa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#ac6cf1a3df6b233f5a7649ba662c07aa6">escrever</a> (bool estado)</td></tr>
+<tr class="separator:ac6cf1a3df6b233f5a7649ba662c07aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -140,6 +142,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a90fb936d88a57581a6783576bc6ac374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1405d2e3bcd75a321747ec3973063e8d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#a1405d2e3bcd75a321747ec3973063e8d">pino</a></td></tr>
 <tr class="separator:a1405d2e3bcd75a321747ec3973063e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8974e8c8154498e66b73f279e21e605"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_i_o.html#aa8974e8c8154498e66b73f279e21e605">ligado</a></td></tr>
+<tr class="separator:aa8974e8c8154498e66b73f279e21e605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab443a641cef81b1a9ec0211c5aa9c1ac"></a>
@@ -204,8 +208,25 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3d02df5cc317d938691346ee0a6aac53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d02df5cc317d938691346ee0a6aac53">&#9670;&nbsp;</a></span>escrever()</h2>
+<a id="ac47e81181ef432bab986355db122b7e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47e81181ef432bab986355db122b7e7">&#9670;&nbsp;</a></span>desligar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPIO::desligar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6cf1a3df6b233f5a7649ba662c07aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6cf1a3df6b233f5a7649ba662c07aa6">&#9670;&nbsp;</a></span>escrever()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,8 +234,25 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void GPIO::escrever </td>
           <td>(</td>
-          <td class="paramtype">GPIO_PinState&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>estado</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc51b3b9cc48c0b454444c917a7c76e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc51b3b9cc48c0b454444c917a7c76e7">&#9670;&nbsp;</a></span>inverter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPIO::inverter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -239,62 +277,17 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aab7724a81ced604abe323e21903e6fe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab7724a81ced604abe323e21903e6fe5">&#9670;&nbsp;</a></span>multipla_escrita()</h2>
+<a id="a4789d30caaeb8a2d4767ca4a9a3703dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4789d30caaeb8a2d4767ca4a9a3703dd">&#9670;&nbsp;</a></span>ligar()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GPIO::multipla_escrita </td>
+          <td class="memname">void GPIO::ligar </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; GPIO_TypeDef * &gt;&#160;</td>
-          <td class="paramname"><em>portas</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::vector&lt; uint16_t &gt;&#160;</td>
-          <td class="paramname"><em>pinos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GPIO_PinState&#160;</td>
-          <td class="paramname"><em>estado</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade8d7d4a06b41825dcdde3ff711b73e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade8d7d4a06b41825dcdde3ff711b73e6">&#9670;&nbsp;</a></span>toggle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GPIO::toggle </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>tempo_em_alto</em> = <code>1000</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>tempo_em_baixo</em> = <code>1000</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -302,6 +295,28 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa8974e8c8154498e66b73f279e21e605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8974e8c8154498e66b73f279e21e605">&#9670;&nbsp;</a></span>ligado</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GPIO::ligado</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1405d2e3bcd75a321747ec3973063e8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1405d2e3bcd75a321747ec3973063e8d">&#9670;&nbsp;</a></span>pino</h2>
 

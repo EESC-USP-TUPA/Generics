@@ -27,14 +27,13 @@ private:
 
 public:
     Can(CAN_HandleTypeDef *handler, uint32_t interrupt, uint32_t id);
-    void iniciar(uint32_t interrupt, uint32_t id);
 
-    void setup(uint32_t interrupt, uint32_t id_high, uint32_t id_low, uint32_t mask_high, uint32_t mask_low);
+    void definir_filtro(uint32_t interrupt, uint32_t id_filtro, uint32_t mascara_filtro);
 
     void guardar_dados(uint8_t* alvo);
-    bool enviar(uint8_t *dados, uint8_t tamanho);
+    bool enviar(uint32_t id_mensagem, uint8_t *dados, uint8_t tamanho);
 
-    void esperar();
+    void esperar(uint32_t timeout);
     virtual ~Can();
 };
 

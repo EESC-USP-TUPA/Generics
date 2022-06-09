@@ -16,17 +16,18 @@ class GPIO
 			GPIO_TypeDef *porta;
 			uint16_t pino;
 
+			bool ligado;
+
 		public:
 			GPIO(){};
 			GPIO(GPIO_TypeDef *endereco_porta, uint16_t endereco_pino) : porta(endereco_porta), pino(endereco_pino) {}
 
-			void escrever(GPIO_PinState estado);
-			
-			void multipla_escrita(std::vector<GPIO_TypeDef *> portas, std::vector<uint16_t> pinos, GPIO_PinState estado);
-
+			void ligar();
+			void desligar();
+			void inverter();
 			bool ler();
 
-			void toggle(uint32_t tempo_em_alto = 1000, uint32_t tempo_em_baixo = 1000);
+			void escrever(bool estado);
 };
 
 

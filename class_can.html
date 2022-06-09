@@ -123,16 +123,14 @@ $(document).ready(function(){initNavTree('class_can.html',''); initResizable(); 
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a42692623ed35d0df7ec1f3da67dc8066"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a42692623ed35d0df7ec1f3da67dc8066">Can</a> (CAN_HandleTypeDef *<a class="el" href="class_can.html#ae762158c35d3ad8aec9f9915873ac1b1">handler</a>, uint32_t <a class="el" href="class_can.html#a545e60b1ac834dab75a3377cba748c1e">interrupt</a>, uint32_t id)</td></tr>
 <tr class="separator:a42692623ed35d0df7ec1f3da67dc8066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d6fe131d5e3eeccc7468cf900a7f10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#ad7d6fe131d5e3eeccc7468cf900a7f10">iniciar</a> (uint32_t <a class="el" href="class_can.html#a545e60b1ac834dab75a3377cba748c1e">interrupt</a>, uint32_t id)</td></tr>
-<tr class="separator:ad7d6fe131d5e3eeccc7468cf900a7f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7e3f9ab5eb8f74c51ef8a96f4f835e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#ae7e3f9ab5eb8f74c51ef8a96f4f835e0">setup</a> (uint32_t <a class="el" href="class_can.html#a545e60b1ac834dab75a3377cba748c1e">interrupt</a>, uint32_t id_high, uint32_t id_low, uint32_t mask_high, uint32_t mask_low)</td></tr>
-<tr class="separator:ae7e3f9ab5eb8f74c51ef8a96f4f835e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c0680e778fdfe847d26e895bb160a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a01c0680e778fdfe847d26e895bb160a8">definir_filtro</a> (uint32_t <a class="el" href="class_can.html#a545e60b1ac834dab75a3377cba748c1e">interrupt</a>, uint32_t id_filtro, uint32_t mascara_filtro)</td></tr>
+<tr class="separator:a01c0680e778fdfe847d26e895bb160a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f217c501e2eb2256d40f663d1f83526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a3f217c501e2eb2256d40f663d1f83526">guardar_dados</a> (uint8_t *alvo)</td></tr>
 <tr class="separator:a3f217c501e2eb2256d40f663d1f83526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98e67a8a35ded18f35c79ab7d43ca7a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a98e67a8a35ded18f35c79ab7d43ca7a6">enviar</a> (uint8_t *dados, uint8_t tamanho)</td></tr>
-<tr class="separator:a98e67a8a35ded18f35c79ab7d43ca7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a331fd2bb34627200b531e47427451b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a331fd2bb34627200b531e47427451b91">esperar</a> ()</td></tr>
-<tr class="separator:a331fd2bb34627200b531e47427451b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98fca430206c1780c6b07ae7a3e3a1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#ac98fca430206c1780c6b07ae7a3e3a1a">enviar</a> (uint32_t id_mensagem, uint8_t *dados, uint8_t tamanho)</td></tr>
+<tr class="separator:ac98fca430206c1780c6b07ae7a3e3a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e31ea3594431b38fc00fee6d324c47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a46e31ea3594431b38fc00fee6d324c47">esperar</a> (uint32_t timeout)</td></tr>
+<tr class="separator:a46e31ea3594431b38fc00fee6d324c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43973d2de0ff08db8542a24815c586af"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_can.html#a43973d2de0ff08db8542a24815c586af">~Can</a> ()</td></tr>
 <tr class="separator:a43973d2de0ff08db8542a24815c586af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -216,8 +214,42 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a98e67a8a35ded18f35c79ab7d43ca7a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98e67a8a35ded18f35c79ab7d43ca7a6">&#9670;&nbsp;</a></span>enviar()</h2>
+<a id="a01c0680e778fdfe847d26e895bb160a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c0680e778fdfe847d26e895bb160a8">&#9670;&nbsp;</a></span>definir_filtro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Can::definir_filtro </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>interrupt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id_filtro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mascara_filtro</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac98fca430206c1780c6b07ae7a3e3a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98fca430206c1780c6b07ae7a3e3a1a">&#9670;&nbsp;</a></span>enviar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,6 +257,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool Can::enviar </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id_mensagem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>dados</em>, </td>
         </tr>
@@ -244,8 +282,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a331fd2bb34627200b531e47427451b91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a331fd2bb34627200b531e47427451b91">&#9670;&nbsp;</a></span>esperar()</h2>
+<a id="a46e31ea3594431b38fc00fee6d324c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e31ea3594431b38fc00fee6d324c47">&#9670;&nbsp;</a></span>esperar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +291,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Can::esperar </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -273,80 +312,6 @@ Private Attributes</h2></td></tr>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>alvo</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad7d6fe131d5e3eeccc7468cf900a7f10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7d6fe131d5e3eeccc7468cf900a7f10">&#9670;&nbsp;</a></span>iniciar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Can::iniciar </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>interrupt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae7e3f9ab5eb8f74c51ef8a96f4f835e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7e3f9ab5eb8f74c51ef8a96f4f835e0">&#9670;&nbsp;</a></span>setup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Can::setup </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>interrupt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>id_high</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>id_low</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mask_high</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mask_low</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

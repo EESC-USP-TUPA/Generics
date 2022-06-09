@@ -2,14 +2,14 @@
 
 #ifdef HAL_CAN_MODULE_ENABLED
 
-Can::Can(CAN_HandleTypeDef *handler, uint32_t interrupt, uint32_t id)
+Can::Can(CAN_HandleTypeDef *handler, uint32_t interrupt)
 {
     this->handler = handler;
     this->tx_header.ExtId = 0;
     this->tx_header.IDE = CAN_ID_STD;
     this->tx_header.RTR = CAN_RTR_DATA;
     this->tx_header.TransmitGlobalTime = DISABLE;
-    this->tx_header.StdId = id;
+    this->tx_header.StdId = 0;
 
     HAL_CAN_Start(this->handler);
     HAL_CAN_ActivateNotification(this->handler, interrupt);

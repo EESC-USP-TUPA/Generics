@@ -26,7 +26,7 @@ private:
     bool lock;
 
 public:
-    Can(CAN_HandleTypeDef *handler, uint32_t interrupt, uint32_t id);
+    Can(CAN_HandleTypeDef *handler, uint32_t interrupt);
 
     void definir_filtro(uint32_t interrupt, uint32_t id_filtro, uint32_t mascara_filtro);
 

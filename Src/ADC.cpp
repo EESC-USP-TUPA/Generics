@@ -8,11 +8,12 @@ ADC::ADC(ADC_HandleTypeDef* hadcx, uint8_t numero_sensores){
 	this->qtd_sensores = numero_sensores;
 	this->buffer = (uint32_t*) malloc(numero_sensores * sizeof(uint32_t));
 	this->valores = (uint32_t*) malloc(numero_sensores * sizeof(uint32_t));
-	HAL_ADC_Start_DMA(this->hadc, this->buffer, this->qtd_sensores);
+	// TODO Auto-generated constructor stub
 }
 
 ADC::~ADC() {
 	free(buffer);
+	// TODO Auto-generated destructor stub
 }
 
 ADC_HandleTypeDef* ADC::retornar_canal() {
@@ -34,7 +35,7 @@ uint8_t ADC::retornar_qtd_sensores() {
 
 
 void ADC::ler_DMA() {
-	HAL_ADC_Start_DMA(this->hadc, this->buffer, this->qtd_sensores);
+	HAL_ADC_Start_DMA(this->hadc, this->buffer, this->retornar_qtd_sensores());
 }
 
 void ADC::parar_DMA() {
